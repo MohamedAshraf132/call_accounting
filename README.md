@@ -1,27 +1,28 @@
-# تطبيق حساب الدقائق - Flutter
+# Call Accounting
 
-## فكرة التطبيق
-اضغط على أيقونة الشبكة، ثم أدخل عدد الأشخاص والمبلغ بالجنيه. التطبيق يعرض الدقائق المحسوبة مباشرة.
+A Flutter app for calculating call minutes and tracking call costs by mobile network. Enter the number of people and the amount spent to see the estimated minutes instantly.
 
-- فودافون: الدقيقة 0.50 جنيه، إذن الدقائق = المبلغ × 2.
-- أورنج: الدقيقة 0.50 جنيه، إذن الدقائق = المبلغ × 2.
-- الشبكات الأخرى: الدقيقة 2.50 جنيه، إذن الدقائق = المبلغ ÷ 2.5.
+## Rates
 
-الواجهة تعرض كذلك إجمالي عدد الأشخاص والمبالغ والدقائق للشبكات كلها، وتحفظ إدخالات كل شبكة محليًا على الجهاز.
+- Vodafone: EGP 0.50 per minute
+- Orange: EGP 0.50 per minute
+- Other networks: EGP 2.50 per minute
 
-## التشغيل
-1. ضع مجلد `lib` وملف `pubspec.yaml` في جذر مشروع Flutter.
-2. شغّل:
-   ```bash
-   flutter pub get
-   flutter run
-   ```
+The dashboard summarizes people, spending, and minutes across all networks. Entries are saved locally on the device.
 
-## ملاحظة
-هذا مشروع مصدر Flutter، وليس APK جاهزًا للتثبيت.
-لبناء APK بعد تثبيت Flutter وAndroid SDK:
+## Run the app
+
+```bash
+flutter pub get
+flutter run
+```
+
+## Build an Android APK
+
+After installing Flutter and the Android SDK, run:
+
 ```bash
 flutter build apk --release
 ```
-سيكون ملف APK عادة في:
-`build/app/outputs/flutter-apk/app-release.apk`
+
+The APK is typically created at `build/app/outputs/flutter-apk/app-release.apk`.

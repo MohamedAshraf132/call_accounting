@@ -1,5 +1,5 @@
 name: call_accounting
-description: تطبيق لحساب عدد الأشخاص والمبالغ والدقائق حسب شبكة الهاتف.
+description: A Flutter app for calculating call minutes and tracking costs by mobile network.
 publish_to: 'none'
 version: 1.0.0+1
 
